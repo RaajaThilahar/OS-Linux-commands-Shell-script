@@ -42,20 +42,34 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+````
+ Thilahar
+ Vijay
+ Chezhiyan
+Maaran
+````
 
 
 
 cat < file2
 ## OUTPUT
-
+Thilahar
+ Vijay
+Maaran
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ```
+Chezhiyan Maaran differ: char 16, line 3
+'''
 comm file1 file2
  ## OUTPUT
-
+````
+Thilahar
+                Vijay
+        Chezhiyan
+	''''
  
 diff file1 file2
 ## OUTPUT
